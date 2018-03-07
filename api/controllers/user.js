@@ -3,9 +3,11 @@
 
 	var User = require('../models/user');
 
+	var jwt = require('../services/jwt');
+
 	function home(req, res){
 	res.status(200).send({
-		message: 'Prueba de rutas en el servidor nodejs en test' 
+		message: 'Prueba de rutas en el servidor nodejs en home' 
 	});
 }
 
@@ -74,7 +76,20 @@ function loginUser(req, res){
 			bcrypt.compare(password, user.password, (err, check) => {
 				if(check){
 					//devolver datos de usuario
-					return res.status(200).send({user})
+					if(params.gettoken){
+
+							// devolver y generar un token
+
+							return res.status(200).send({
+									token: jwt.createToken(user)
+							});
+
+					}else{
+							//devolver datos de usuario
+						user.password = undefined;
+						return res.status(200).send({user});
+					}
+
 				}else{
 					return res.status(404).send({message: 'Usuario no identificado'});
 				}
