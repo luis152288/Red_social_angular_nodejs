@@ -4,7 +4,7 @@
   "description": "red social con angular nodejs y express",
   "main": "index.js",
   "scripts": {
-  	"start": "nodemon index.js",
+    "start": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Luis Munoz",
@@ -16,7 +16,8 @@
     "express": "^4.16.2",
     "jwt-simple": "^0.5.1",
     "moment": "^2.21.0",
-    "mongoose": "^5.0.9"
+    "mongoose": "^5.0.9",
+    "mongoose-pagination": "^1.0.0"
   },
   "devDependencies": {
     "nodemon": "^1.17.1"
