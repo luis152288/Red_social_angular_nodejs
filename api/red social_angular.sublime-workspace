@@ -1,0 +1,665 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"usuri",
+				"usuario"
+			],
+			[
+				"usr",
+				"users"
+			],
+			[
+				"us",
+				"usuario"
+			],
+			[
+				"re",
+				"return"
+			],
+			[
+				"sa",
+				"saveUser"
+			],
+			[
+				"USE",
+				"user"
+			],
+			[
+				"el",
+				"else"
+			],
+			[
+				"user",
+				"user"
+			],
+			[
+				"pa",
+				"password"
+			],
+			[
+				"b",
+				"bcrypt"
+			],
+			[
+				"sta",
+				"status"
+			],
+			[
+				"fu",
+				"fun\tFunction"
+			],
+			[
+				"use",
+				"use"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"S",
+				"String"
+			],
+			[
+				"P",
+				"PostSchema"
+			],
+			[
+				"U",
+				"UserSchema"
+			],
+			[
+				"mo",
+				"mongoose"
+			],
+			[
+				"str",
+				"String"
+			],
+			[
+				"no",
+				"nodemon"
+			],
+			[
+				"me",
+				"message"
+			],
+			[
+				"get",
+				"getElementById"
+			],
+			[
+				"te",
+				"text"
+			],
+			[
+				"ma",
+				"margin"
+			],
+			[
+				"li",
+				"link\tTag"
+			],
+			[
+				"con",
+				"console"
+			],
+			[
+				"cla",
+				"class_alias"
+			],
+			[
+				"Pos",
+				"PostPolicy"
+			],
+			[
+				"St",
+				"Storage"
+			],
+			[
+				"reque",
+				"required"
+			],
+			[
+				"array",
+				"array"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"tetx",
+				"text-anchor"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"justy",
+				"justify-all"
+			],
+			[
+				"as",
+				"asset"
+			],
+			[
+				"tag",
+				"TAG"
+			],
+			[
+				"ca",
+				"Category"
+			],
+			[
+				"pos",
+				"post"
+			],
+			[
+				"pu",
+				"public"
+			],
+			[
+				"ro",
+				"routes"
+			],
+			[
+				"ra",
+				"rand"
+			],
+			[
+				"pri",
+				"print_r"
+			],
+			[
+				"word",
+				"wordpress"
+			],
+			[
+				"cal",
+				"calculo"
+			],
+			[
+				"en",
+				"envio"
+			],
+			[
+				"n",
+				"n3"
+			],
+			[
+				"CA",
+				"calcular"
+			],
+			[
+				"ac",
+				"action\tAttr"
+			],
+			[
+				"num",
+				"num3"
+			],
+			[
+				"l",
+				"line-height"
+			],
+			[
+				"s",
+				"strong\tTag"
+			],
+			[
+				"fon",
+				"font-size"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "index.js",
+			"settings":
+			{
+				"buffer_size": 479,
+				"encoding": "UTF-8",
+				"line_ending": "Windows",
+				"name": "index.js"
+			}
+		},
+		{
+			"file": "app.js",
+			"settings":
+			{
+				"buffer_size": 351,
+				"encoding": "UTF-8",
+				"line_ending": "Windows",
+				"name": "app.js"
+			}
+		},
+		{
+			"file": "routes/user.js",
+			"settings":
+			{
+				"buffer_size": 288,
+				"encoding": "UTF-8",
+				"line_ending": "Windows",
+				"name": "user.js"
+			}
+		},
+		{
+			"file": "controllers/user.js",
+			"settings":
+			{
+				"buffer_size": 1606,
+				"encoding": "UTF-8",
+				"line_ending": "Windows",
+				"name": "user.js"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "Package Control: ",
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 412.0
+	},
+	"console":
+	{
+		"height": 130.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '6f4c264a24d933ce70df5dedcf1dcaee' + 'ebe013ee18cced0ef93d5f746d80ef60'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Program Files (x86)/Ampps/www/red_social_angular",
+		"/C/Program Files (x86)/Ampps/www/red_social_angular/api",
+		"/C/Program Files (x86)/Ampps/www/red_social_angular/api/controllers",
+		"/C/Program Files (x86)/Ampps/www/red_social_angular/api/routes"
+	],
+	"file_history":
+	[
+		"/C/Program Files (x86)/Ampps/www/red_social_angular/api/models/user.js",
+		"/C/Program Files (x86)/Ampps/www/red_social_angular/api/models/message.js",
+		"/C/Program Files (x86)/Ampps/www/red_social_angular/api/models/follow.js",
+		"/C/Program Files (x86)/Ampps/www/red_social_angular/api/models/post.js",
+		"/C/Program Files (x86)/Ampps/www/red_social_angular/api/package.json",
+		"/C/Program Files (x86)/Ampps/www/red_social_angular/api/package-lock.json",
+		"/C/Program Files (x86)/Ampps/www/chat_node_socket/server/index.js",
+		"/C/Program Files (x86)/Ampps/www/chat_node_socket/client/index.html",
+		"/C/Program Files (x86)/Ampps/www/chat_node_socket/client/main.js",
+		"/C/Program Files (x86)/Ampps/www/chat_node_socket/package.json",
+		"/C/Users/lmunoz/Desktop/code.html",
+		"/C/Users/lmunoz/Desktop/index.html",
+		"/C/xampp/htdocs/blog/resources/views/errors/404.blade.php",
+		"/C/xampp/htdocs/blog/resources/views/errors/403.blade.php",
+		"/C/xampp/htdocs/blog/app/Policies/PostPolicy.php",
+		"/C/xampp/htdocs/blog/app/Http/Controllers/Admin/PostController.php",
+		"/C/xampp/htdocs/blog/app/Providers/AuthServiceProvider.php",
+		"/C/xampp/htdocs/blog/config/filesystems.php",
+		"/C/xampp/htdocs/blog/resources/views/admin/posts/edit.blade.php",
+		"/C/xampp/htdocs/blog/resources/views/admin/posts/create.blade.php",
+		"/C/xampp/htdocs/blog/app/Http/Requests/PostUpdateRequest.php",
+		"/C/xampp/htdocs/blog/app/Http/Requests/PostStoreRequest.php",
+		"/C/Users/lmunoz/AppData/Local/Temp/installer.php",
+		"/C/Users/lmunoz/AppData/Local/Temp/fz3temp-3/index 2.php",
+		"/C/Users/lmunoz/AppData/Local/Temp/fz3temp-3/functions.php",
+		"/C/Users/lmunoz/AppData/Local/Temp/fz3temp-3/index.php",
+		"/C/Users/lmunoz/Desktop/essentialgrid/essential-grid/essential-grid.php",
+		"/C/Users/lmunoz/Desktop/essentialgrid/essential-grid/languages/essential-grid-en_US.po",
+		"/C/Users/lmunoz/Desktop/essentialgrid/essential-grid/languages/index.php",
+		"/C/xampp/htdocs/blog/resources/views/layouts/app.blade.php",
+		"/C/xampp/htdocs/blog/resources/views/admin/posts/partial/form.blade.php",
+		"/C/xampp/htdocs/blog/resources/views/admin/posts/index.blade.php",
+		"/C/xampp/htdocs/blog/resources/views/admin/posts/show.blade.php",
+		"/C/xampp/htdocs/blog/app/Http/Controllers/Admin/CategoryController.php",
+		"/C/xampp/htdocs/blog/resources/views/admin/categories/show.blade.php",
+		"/C/xampp/htdocs/blog/resources/views/admin/categories/index.blade.php",
+		"/C/xampp/htdocs/blog/resources/views/admin/categories/partial/form.blade.php",
+		"/C/xampp/htdocs/blog/resources/views/admin/categories/create.blade.php",
+		"/C/xampp/htdocs/blog/resources/views/admin/tags/index.blade.php",
+		"/C/xampp/htdocs/blog/app/Http/Requests/CategoryStoreRequest.php",
+		"/C/xampp/htdocs/blog/resources/views/admin/categories/edit.blade.php",
+		"/C/xampp/htdocs/blog/app/Http/Requests/CategoryUpdateRequest.php",
+		"/C/xampp/htdocs/blog/app/Http/Controllers/Admin/TagController.php",
+		"/C/xampp/htdocs/blog/resources/views/admin/tags/partial/form.blade.php",
+		"/C/xampp/htdocs/blog/app/Http/Requests/TagStoreRequest.php",
+		"/C/xampp/htdocs/blog/app/Http/Requests/TagUpdateRequest.php",
+		"/C/Users/lmunoz/Desktop/TagUpdateRequest.php",
+		"/C/xampp/htdocs/blog/resources/views/admin/tags/create.blade.php",
+		"/C/xampp/htdocs/blog/resources/views/admin/tags/edit.blade.php",
+		"/C/xampp/htdocs/blog/resources/views/admin/tags/show.blade.php",
+		"/C/xampp/htdocs/blog/public/vendor/stringToSlug/jquery.stringToSlug.min.js",
+		"/C/xampp/htdocs/blog/config/app.php",
+		"/C/xampp/htdocs/blog/composer.json",
+		"/C/xampp/htdocs/blog/routes/web.php",
+		"/C/xampp/htdocs/blog/.env",
+		"/C/xampp/htdocs/blog/resources/views/admin/tag/partial/form.blade.php",
+		"/C/xampp/htdocs/blog/resources/views/admin/tag/show.blade.php",
+		"/C/xampp/htdocs/blog/resources/views/admin/tag/index.blade.php",
+		"/C/xampp/htdocs/blog/resources/views/admin/tag/create.blade.php",
+		"/C/xampp/htdocs/blog/resources/views/admin/tag/edit.blade.php",
+		"/C/xampp/htdocs/blog/app/Http/Controllers/Auth/ResetPasswordController.php",
+		"/C/xampp/htdocs/blog/app/Http/Controllers/Auth/RegisterController.php",
+		"/C/xampp/htdocs/blog/app/Http/Controllers/Auth/LoginController.php",
+		"/C/xampp/htdocs/blog/resources/views/web/post.blade.php",
+		"/C/xampp/htdocs/blog/resources/views/web/posts.blade.php",
+		"/C/xampp/htdocs/blog/app/Http/Controllers/web/PageController.php",
+		"/C/xampp/htdocs/blog/app/Category.php",
+		"/C/xampp/htdocs/blog/app/Post.php",
+		"/C/xampp/htdocs/blog/app/Tag.php",
+		"/C/xampp/htdocs/blog/database/migrations/2018_01_29_225202_create_categories_table.php",
+		"/C/xampp/htdocs/blog/app/User.php",
+		"/C/xampp/htdocs/blog/database/migrations/2018_01_29_225457_create_tags_table.php",
+		"/C/xampp/htdocs/blog/database/factories/postFactory.php",
+		"/C/xampp/htdocs/blog/database/seeds/PostsTableSeeder.php",
+		"/C/xampp/htdocs/blog/database/seeds/CatogoriesTableSeeder.php",
+		"/C/xampp/htdocs/blog/database/seeds/DatabaseSeeder.php",
+		"/C/xampp/htdocs/blog/database/seeds/UsersTableSeeder.php",
+		"/C/xampp/htdocs/blog/database/seeds/TagsTableSeeder.php",
+		"/C/xampp/htdocs/blog/database/factories/TagFactory.php",
+		"/C/xampp/htdocs/blog/database/factories/CategoryFactory.php",
+		"/C/xampp/htdocs/blog/database/migrations/2018_01_29_225702_create_post_tag_table.php",
+		"/C/xampp/htdocs/blog/database/migrations/2014_10_12_000000_create_users_table.php",
+		"/C/xampp/htdocs/blog/database/migrations/2014_10_12_100000_create_password_resets_table.php",
+		"/C/xampp/htdocs/blog/database/migrations/2018_01_29_225357_create_posts_table.php",
+		"/C/xampp/htdocs/blog/database/migrations/2018_01_29_214121_create_post_tag_table.php",
+		"/C/xampp/htdocs/blog/database/migrations/2018_01_29_213904_create_post_table.php",
+		"/C/xampp/htdocs/blog/database/migrations/2018_01_29_213819_create_categories_table.php",
+		"/C/Users/lmunoz/AppData/Local/Temp/fz3temp-2/revslider_operations.class.php",
+		"/C/Users/lmunoz/AppData/Local/Temp/fz3temp-2/ps_facetedsearch.tpl",
+		"/C/Users/lmunoz/AppData/Local/Temp/fz3temp-2/ps_shoppingcart 2.tpl",
+		"/C/Users/lmunoz/AppData/Local/Temp/fz3temp-2/ps_shoppingcart-btn.tpl",
+		"/C/Users/lmunoz/AppData/Local/Temp/fz3temp-2/ps_shoppingcart.tpl",
+		"/C/Users/lmunoz/AppData/Local/Temp/Rar$DIa4352.44440/mthumb.php",
+		"/C/xampp/htdocs/AnimatedStrokes/js/TweenMax.min.js",
+		"/C/xampp/htdocs/AnimatedStrokes/js/demo1.js",
+		"/C/Users/lmunoz/Desktop/index.php",
+		"/C/Users/lmunoz/Documents/templates/kt_freebie_onepage_1/theme/assets/onepage/css/style.css",
+		"/C/Users/lmunoz/Documents/templates/kt_freebie_onepage_1/theme/assets/onepage/css/custom.css",
+		"/C/Users/lmunoz/Documents/templates/kt_freebie_onepage_1/theme/assets/onepage/css/themes/gray.css",
+		"/C/Users/lmunoz/Documents/templates/kt_freebie_onepage_1/theme/assets/onepage/css/themes/green.css",
+		"/C/Users/lmunoz/Documents/templates/kt_freebie_onepage_1/theme/assets/onepage/css/themes/orange.css",
+		"/C/Users/lmunoz/Documents/templates/kt_freebie_onepage_1/theme/assets/onepage/css/themes/red.css",
+		"/C/Program Files (x86)/Ampps/www/idealcalibre/wp-config.php",
+		"/C/xampp/htdocs/kt_freebie_onepage_1/theme/index.html",
+		"/C/xampp/htdocs/kt_freebie_onepage_1/theme/assets/pages/img/products/p1.jpg",
+		"/C/xampp/php/php.ini",
+		"/C/Program Files (x86)/Ampps/php/php.ini",
+		"/C/Program Files (x86)/Ampps/www/idealcalibre/.htaccess",
+		"/C/Users/lmunoz/AppData/Local/Temp/fz3temp-2/index.php",
+		"/C/Users/lmunoz/AppData/Local/Temp/Rar$DIa1936.27582/style.css",
+		"/C/Users/lmunoz/AppData/Local/Temp/Rar$DIa1936.27862/style.css",
+		"/C/Users/lmunoz/AppData/Local/Temp/Rar$DIa9636.29703/style.css",
+		"/C/Users/lmunoz/Documents/wordpress/Avada/style.css",
+		"/C/Users/lmunoz/AppData/Local/Temp/Rar$DIa3884.1625/style.css",
+		"/C/xampp/htdocs/test/wp-config-sample.php",
+		"/C/xampp/htdocs/prestashop/themes/classic/modules/contactform/views/templates/widget/contactform.tpl",
+		"/C/xampp/htdocs/espurabulla.com/.tmp/public/index.html",
+		"/C/xampp/htdocs/mymodules/views/templates/hook/mymodulo.tpl",
+		"/C/xampp/htdocs/mymodules/views/css/mymodule.css",
+		"/C/xampp/htdocs/calculadora-php/calculadora.php"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 104.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 3,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "index.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 479,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								411,
+								411
+							]
+						],
+						"settings":
+						{
+							"auto_name": "index.js",
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 351,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								316,
+								316
+							]
+						],
+						"settings":
+						{
+							"auto_name": "app.js",
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 135.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "routes/user.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 288,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								264,
+								264
+							]
+						],
+						"settings":
+						{
+							"auto_name": "user.js",
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "controllers/user.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1606,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1558,
+								1558
+							]
+						],
+						"settings":
+						{
+							"auto_name": "user.js",
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 180.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 35.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "red social_angular.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 179.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
