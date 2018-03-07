@@ -32,7 +32,7 @@ function saveUser(req, res) {
 		User.find({ $or: [
 							{email: user.email},
 							{nick: user.nick}
-					]}).exec((err, users) => {
+					]}).exec((err, user) => {
 						if(err) return res.status(500).send({message:'error en la peticion de usuarios'});
 
 						if(users && users.length >= 1){
@@ -61,9 +61,33 @@ function saveUser(req, res) {
 
 }
 
+function loginUser(req, res){
+	var params = req.body;
+
+	var email = params.email;
+	var password = params.password;
+
+	User.findOne({email: email}, (err, user) => {
+		if(err) return res.status(500).send({message: 'Error en la peticion'});
+
+		if(user){
+			bcrypt.compare(password, user.password, (err, check) => {
+				if(check){
+					//devolver datos de usuario
+					return res.status(200).send({user})
+				}else{
+					return res.status(404).send({message: 'Usuario no identificado'});
+				}
+			});
+		}else{
+			return res.status(404).send({message: 'Usuario no identificado'});
+		}
+	});
+}
 
 module.exports = {
 	home,
 	test,
-	saveUser
+	saveUser,
+	loginUser
 }
