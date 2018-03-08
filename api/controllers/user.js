@@ -3,9 +3,15 @@
 
 	var mongoosePaginate = require('mongoose-pagination');
 
+	var fs = require('fs');
+
+	var path= require('path');
+
 	var User = require('../models/user');
 
 	var jwt = require('../services/jwt');
+
+
 
 	function home(req, res){
 	res.status(200).send({
@@ -167,8 +173,64 @@ function updateUser(req, res) {
 	})
 }
 
+// subir imagenes de perfil
+
+function uploadImage(req, res) {
+	var userId = req.params.id;
 
 
+	if (req.files) {
+		var files_path = req.files.image.path;
+		console.log(files_path);
+
+		var files_split = files_path.files_split('\\');
+		console.log(files_split);
+
+		var files_name = files_split[2];
+		console.log(files_name);
+
+
+		var ext_split = files_name.split('\.');
+		console.log(ext_split);
+
+		var files_ext = ext_split[1];
+		console.log(files_ext);
+
+		if (userId != req.user.sub) {
+			return removefilesOfUploads(res, file_path, 'No tienes permiso para actualizar los datos');
+
+		}
+
+
+		if (files_ext == 'png' || files_ext == 'jpg' || files_ext == 'jpeg' || files_ext == 'gif') {
+				//actualiza imagen de perfil
+				user.findByIdAndUpdate(userId, {image: files_name}, {new:true}, (err, userUpdate) =>{
+					if(err) return res.status(500).send({message: 'Error en la peticion'});
+
+					if (!userUpdate) return res.status(404).send({message: 'No se ah podido actualizar el usuario'});
+
+					return res.status(200).send({user: userUpdate})
+
+				});
+
+		} else {
+			
+			return removefilesOfUploads(file_path, 'La Extension del archivo no es valida');
+		}
+
+
+
+	}else{
+		return res.status(200).send({message: 'No hay archivos de imagen'});
+	}
+}
+
+function removefilesOfUploads(res, files_path, message){
+		fs.unlink(file_path, (err)=>{
+			return res.status(200).send({message: message})
+	});
+
+}
 
 module.exports = {
 	home,
@@ -178,4 +240,5 @@ module.exports = {
 	getUser,
 	getUsers,
 	updateUser,
+	uploadImage
 }
