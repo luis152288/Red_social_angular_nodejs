@@ -6,6 +6,6 @@
 	var md_auth = require('../middleware/authenticated.js');
 
 
-	api.get('/test-follow', md_auth.ensureAuth, FollowController.prueba);
+	api.post('/follow', md_auth.ensureAuth, FollowController.saveFollow);
 
 	module.exports = api;
