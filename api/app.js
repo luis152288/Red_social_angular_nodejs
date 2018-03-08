@@ -6,6 +6,7 @@ var app = express();
 
 //load routes
 var user_routes = require('./routes/user');
+var follow_routes = require('./routes/follow');
 
 //middelwares
 
@@ -19,6 +20,7 @@ var user_routes = require('./routes/user');
 //routes
 
 app.use('/api', user_routes);
+app.use('/api', follow_routes);
 
 //exports
 
