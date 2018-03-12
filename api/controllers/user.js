@@ -8,10 +8,8 @@
 	var path= require('path');
 
 	var User = require('../models/user');
-
+	var Follow = require('../models/follow');
 	var jwt = require('../services/jwt');
-
-
 
 	function home(req, res){
 	res.status(200).send({
@@ -120,6 +118,12 @@ function getUser(req, res) {
 		if(err) return res.status(500).send({message: 'Error en la peticion'});
 
 		if(!user) return res.status(404).send({message: 'Usuario no encontrado'});
+
+		Follow.findOne({"user":req.user.sub, "followed": userId}).exec((err, follow) => {
+			if (err) return res.status(500).send({message: 'Error en el seguimiento'});
+
+			return res.status(200).send({user, follow});
+		});
 
 		return res.status(200).send({user});
 	});
