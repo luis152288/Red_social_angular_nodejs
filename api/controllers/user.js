@@ -119,17 +119,43 @@ function getUser(req, res) {
 
 		if(!user) return res.status(404).send({message: 'Usuario no encontrado'});
 
-		Follow.findOne({"user":req.user.sub, "followed": userId}).exec((err, follow) => {
-			if (err) return res.status(500).send({message: 'Error en el seguimiento'});
+		followThisUser(req.user.sub, userId).then((value) =>{
+			user.password = undefined;
 
-			return res.status(200).send({user, follow});
+			return res.status(200).send({
+				user, 
+				following: value.following, 
+				followed: value.followed
+			});
+
 		});
 
-		return res.status(200).send({user});
+	
 	});
+
+		
 }
 
-// paginado de usurios
+
+async function followThisUser(identity_user_id, user_id) {
+	var following = await Follow.findOne({"user":req.user.sub, "followed": userId}).exec((err, follow) => {
+			if (err) return handleError(err);
+
+			return follow;
+		});
+
+	var followed = await Follow.findOne({"user":user_id, "followed":identity_user_id}).exec((err, follow) =>{
+		if (err) return handleError(err);
+		return follow;
+	});
+
+	return{
+		following: following,
+		followed: followed
+	}
+}
+
+// paginado de usuarios
 
 function getUsers(req, res) {
 	var identity_user_id = req.user.sub;
@@ -147,12 +173,76 @@ function getUsers(req, res) {
 
 		if (!users) return res.status(404).send({message: 'No se encontro  ningun usuario'});
 	
-		return res.status(200).send({
-			users,
-			total,
-			page: Math.ceil(total/itemsPerPage)
+		followUsersIds(identity_user_id).then((value) => {
+				return res.status(200).send({
+				users,
+				users_following: value.following,
+				users_follow_me: value.followed,
+				total,
+				page: Math.ceil(total/itemsPerPage)
+			});
+			
 		});
 	});
+}
+
+async function followUsersIds(user_id) {
+	var following = await Follow.find({"user":user_id}).select({'_id':0, '__v':0, 'user':0}).exec((err, follows) => {
+		return follows;
+	});
+
+	var followed = await Follow.find({"followed":user_id}).select({'_id':0, '__v':0, 'followed':0}).exec((err, follows) => {
+		return follows;
+	});
+
+	//Procesar following ids
+	var following_clean = [];
+
+		following.forEach(() =>{
+			following_clean.push(follow.followed);
+		});
+
+	
+	//procesar followed ids
+	var followed_clean = [];
+
+		followed.forEach(() =>{
+			followed_clean.push(follow.followed);
+		});
+
+	return{
+		following: following_clean,
+		followed: followed_clean
+	}
+}
+
+//contador de seguidores
+
+function getCounters(req, res) {
+	if (req.params.id) {
+		userId = req.params.id;
+	}
+	
+	getCountFollows(req.params.id).then((value) => {
+			return res.status(200).send(value);
+		});
+}
+
+async function getCountFollows(user_id) {
+	var following = await Follow.count({"user":user_id}).exec((err, count) => {
+		if (err) return handleError(err);
+		return count;
+	});
+
+	var followed = await Follow.count({"followed": user_id}).exec((err, count) => {
+		if (err) return handleError(err);
+		return count;
+	});
+
+	return {
+		following: following,
+		followed: followed
+	}
 }
 
 // actualizacion de datos
@@ -256,6 +346,7 @@ module.exports = {
 	loginUser,
 	getUser,
 	getUsers,
+	getCounters,
 	updateUser,
 	uploadImage,
 	getImageFile
